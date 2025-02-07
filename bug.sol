@@ -1,0 +1,1 @@
+function transfer(address payable _to, uint _value) public {     require(balanceOf[msg.sender] >= _value, "Insufficient balance");     balanceOf[msg.sender] -= _value;     balanceOf[_to] += _value;     emit Transfer(msg.sender, _to, _value); }
