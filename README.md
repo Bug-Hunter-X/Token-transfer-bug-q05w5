@@ -1,0 +1,1 @@
+This repository contains a Solidity smart contract with a bug in its token transfer function. The bug is that it does not check if the recipient address is valid before transferring the tokens. This can lead to loss of funds if the recipient address is invalid. The solution is to add a check to ensure that the recipient address is valid before transferring the tokens.
